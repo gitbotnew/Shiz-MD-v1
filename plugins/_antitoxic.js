@@ -13,12 +13,12 @@ export async function before(m, { isAdmin, isBotAdmin, isOwner }) {
     
     if (isToxic && chat.antiToxic && !isOwner && !isAdmin) {
        user.warn += 1
-       if (!(user.warn >= 5)) await m.reply(`${user.warn == 1 ? `Hola *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`}, decir la palabra (${isToxic}) está prohibido en este bot *${user.warn}/5* advertencia`, false, { mentions: [m.sender] })
+       if (!(user.warn >= 5)) await m.reply(`${user.warn == 1 ? `Hello *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`}, say the word (${isToxic}) is prohibited in this bot *${user.warn}/5* warning`, false, { mentions: [m.sender] })
     }
     
     if (user.warn >= 5) {
        user.warn = 0
-       await m.reply(`Hola *@${m.sender.split`@`[0]}*, superaste las 5 advertencias serás bloqueado y eliminado de este grupo`, false, { mentions: [m.sender] })
+       await m.reply(`Hello *@${m.sender.split`@`[0]}*, you exceeded 5 warnings you will be blocked and removed from this group`, false, { mentions: [m.sender] })
        user.banned = true
        await this.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
        //await this.updateBlockStatus(m.sender, 'block')
