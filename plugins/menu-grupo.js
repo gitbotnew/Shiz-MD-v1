@@ -83,7 +83,7 @@ handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(menugrupo|\?)$/i
 handler.exp = 50
-handler.register = true
+handler.register = false
 export default handler
 
 function clockString(ms) {
