@@ -1,7 +1,7 @@
 import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
-let locale = 'es'
+let locale = 'en'
 let d = new Date(new Date + 3600000)
 let time = d.toLocaleTimeString(locale, {
       hour: 'numeric',
@@ -78,7 +78,7 @@ handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(menubusquedas|\?)$/i
 handler.exp = 50
-handler.register = true
+handler.register = false
 export default handler
 
 function clockString(ms) {
