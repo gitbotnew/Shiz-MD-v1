@@ -13,7 +13,7 @@ let _uptime = process.uptime() * 1000
 let datcov = await fetch('https://latam-api.vercel.app/api/covid19?apikey=nekosmic&q=world');
 	let CovidApi = await datcov.json();
 	var cotext = `┏「 xIKRATOSx 」┓
-┃ *Whatsapp Bot created by Ahmad Ali*
+┃ *Bot created by Ahmad Ali*
 ┃ *Contact:* 
 ┃      *wa.me/923470027813*
 ┗─━─━「 🌎 」━─━─┛\n\n`
