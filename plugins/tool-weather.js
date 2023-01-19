@@ -18,5 +18,5 @@ m.reply(wea)
 return "*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾 𝚂𝙴 𝙷𝙰𝙽 𝙴𝙽𝙲𝙾𝙽𝚃𝚁𝙰𝙳𝙾 𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾𝚂, 𝙲𝙾𝚁𝚁𝙾𝙱𝙾𝚁𝙴 𝚀𝚄𝙴 𝙷𝙰𝚈𝙰 𝙴𝚂𝙲𝚁𝙸𝚃𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝚂𝚄 𝙿𝙰𝙸𝚂 𝙾 𝙲𝙸𝚄𝙳𝙰𝙳*"}}
 handler.help = ['clima *<ciudad/país>*']
 handler.tags = ['herramientas']
-handler.command = /^(clima|tiempo)$/i
+handler.command = /^(clima|tiempo|weather)$/i
 export default handler

@@ -18,7 +18,7 @@ export async function before(m, { isAdmin, isBotAdmin, isOwner }) {
     
     if (user.warn >= 5) {
        user.warn = 0
-       await m.reply(`Hello *@${m.sender.split`@`[0]}*, you exceeded 5 warnings you will be blocked and removed from this group`, false, { mentions: [m.sender] })
+       await m.reply(`Hey *@${m.sender.split`@`[0]}*, you exceeded 5 warnings you will be blocked and removed from this group`, false, { mentions: [m.sender] })
        user.banned = true
        await this.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
        //await this.updateBlockStatus(m.sender, 'block')
