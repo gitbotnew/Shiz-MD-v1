@@ -3,7 +3,7 @@ import { youtubeSearch } from '@bochilteam/scraper'
 let handler = async(m, { conn, usedPrefix, text, args, command }) => {
 let name = await conn.getName(m.sender)
 
-  if (!text) throw 'Mau cari apa?'
+  if (!text) throw `Where is the text?\nExample; *${usedPrefix + command}* arcade`
   let cari = await youtubeSearch(`${text}`)
     let dapet = cari.video
     let listSections = []
